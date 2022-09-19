@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Base styles */
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+h1, h2, h3, a {
+    font-weight: 800;
+}
+
+h1, h3 {
+    color: #13183F;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Components */
+
+.btn {
+   padding: 0.6875rem 1.5rem;
+   font-family: inherit;
+   font-size: inherit;
+   font-weight: 700;
+   color: #fff;
+   border: none;
+   border-radius: 1.96875rem;
+   cursor: pointer;
+   transition: all .2s ease-in-out;
+}
+
+/* Utility Styles */
+
+.wrapper {
+    max-width: 69.75rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.btn--lrg {
+    padding: 0.9375rem 2.375rem;
+}
+
+.btn--dark {
+    background: #13183F;
+}
+
+.btn--dark:hover {
+    background: #666CA3;
+}
+
+.btn--gradient-light {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);  
+}
+
+.btn--gradient-light:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn--gradient-dark {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+}
+
+.btn--gradient-dark:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+/* General */
+
+.header-primary {
+    padding-bottom: 2rem;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.375rem;
+}
+
+.cta img {
+    width: 5.5625rem;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+}
+
+.hero__text {
+    color: #83869A;
+    margin-bottom: 1.5rem;
+}
+
+.hero .left {
+    margin-bottom: 2.875rem;
+}
+
+main {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding-bottom: 5rem;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    padding: 0 1.75rem 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 1.5625rem 3.125rem rgba(6, 22, 141, 0.0442381);
+    border-radius: 0.625rem;
+}
+
+.course:first-child {
+    margin-top: 0;
+}
+
+
+.course img {
+    margin-top: -1.5rem;
+    align-self: flex-start;
+    
+}
+
+.course__title {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.course__text {
+    color: #83869A;
+    margin-bottom: 1.5rem;
+}
+
+.course__link {
+    margin-top: auto;
+    font-size: 1.125rem;
+    color: #F74780;
+}
+
+.course__link:hover {
+    color: #FFA7C3;
+}
+
+.course--cta {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 0.625rem;
+    padding: 1.5rem 1.75rem;
+}
+
+.course--cta__title {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.footer--primary {
+    padding: 2.25rem 0;
+    background: #13183F;
+}
+
+.footer--primary .cta {
+    margin-bottom: 0;
+}
+
+/* Media Quieries */
+
+@media screen and (min-width: 48em) {
+    .cta {
+        margin-bottom: 6.25rem;
+    }
+
+    .hero {
+        position: relative;
+        display: flex;
+    }
+
+    .hero .right {
+        margin-right: -15.625rem;
+        margin-top: -9.375rem;
+    }
+
+    .courses {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 11px;
+    }
+
+    .courses > * {
+        flex-basis: 21.1875rem;
+    }
+
+    .course:first-child {
+        margin-top: 2.5rem
+    }
+
+    .course--cta__title {
+        padding-top: 2.5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 64em) {
+    body {
+        font-size: 1.125rem;
+    }
+
+    .cta {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 11.125rem;
+    }
+
+    .cta img {
+        width: 7.125rem;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .hero .right {
+        margin-right: -23.75rem;
+        margin-top: -18rem;
+    }
+
+    .course--cta__title {
+        font-size: 2rem;
+    }
+
+    .course__title {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 90em) {
+    .hero .left {
+        flex-basis: 28.5625rem;
+    }
+
+    .hero .right {
+        position: absolute;
+        width: 61.9375rem;
+        left: 35rem;
+        top: -6rem;
+    }
+}
